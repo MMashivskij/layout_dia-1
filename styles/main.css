@@ -43,7 +43,34 @@ h3 {
 
 @media screen and (max-width: 1023px) {
   .header {
-    padding: 9px 45px 0 !important; } }
+    padding: 9px 45px 0 !important;
+    background-image: none !important;
+    background-color: #56ccf2; }
+    .header__top {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .header__top_logo {
+        margin-right: 0 !important;
+        margin-bottom: 24px; }
+      .header__top_nav_spec {
+        margin-left: 0 !important; }
+    .header__wrapper {
+      margin-left: 0 !important; }
+    .header__text {
+      color: #253757; }
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .nav__list_item {
+      margin: 0 !important; }
+  .container {
+    width: 280px !important;
+    height: 210px !important;
+    overflow: hidden; } }
 
 .header {
   color: white;
