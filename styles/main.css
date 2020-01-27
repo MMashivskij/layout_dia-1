@@ -160,7 +160,7 @@ input {
 
 @media screen and (max-width: 1024px) {
   .services {
-    padding: 81px 81px; }
+    padding: 81px; }
     .services__block {
       margin-top: 81px; } }
 
