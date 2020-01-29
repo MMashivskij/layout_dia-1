@@ -19,7 +19,7 @@ input {
 
 .header {
   width: inherit;
-  background-image: linear-gradient(to top, #fcfcfd 27%, rgba(252, 252, 253, 0) -20%), linear-gradient(115deg, #56ccf2 72%, #fcfcfd 32%);
+  background-image: linear-gradient(to top, #fcfcfd 27.8%, rgba(252, 252, 253, 0) -20%), linear-gradient(115deg, #56ccf2 72%, #fcfcfd 32%);
   padding: 48px 227px 0;
   color: #fff; }
   .header__info {
@@ -51,12 +51,12 @@ input {
 
 @media screen and (max-width: 1480px) {
   .header {
-    background-image: linear-gradient(to top, #fcfcfd 27.3%, rgba(252, 252, 253, 0) -20%), linear-gradient(115deg, #56ccf2 74%, #fcfcfd 32%);
+    background-image: linear-gradient(to top, #fcfcfd 27.6%, rgba(252, 252, 253, 0) -20%), linear-gradient(115deg, #56ccf2 74%, #fcfcfd 32%);
     padding: 48px 182px 0; } }
 
 @media screen and (max-width: 1366px) {
   .header {
-    background-image: linear-gradient(to top, #fcfcfd 25.5%, rgba(252, 252, 253, 0) -20%), linear-gradient(115deg, #56ccf2 70%, #fcfcfd 32%);
+    background-image: linear-gradient(to top, #fcfcfd 26%, rgba(252, 252, 253, 0) -20%), linear-gradient(115deg, #56ccf2 70%, #fcfcfd 32%);
     padding: 48px 182px 0; }
     .header__info {
       padding-left: 82px;
@@ -1028,6 +1028,43 @@ input {
         position: absolute;
         top: 90px;
         left: 60px; } }
+
+.author {
+  -webkit-animation: changingColors 30s linear infinite;
+          animation: changingColors 30s linear infinite;
+  text-decoration: none; }
+
+@-webkit-keyframes changingColors {
+  0% {
+    color: black; }
+  10% {
+    color: blue; }
+  30% {
+    color: green; }
+  50% {
+    color: yellow; }
+  70% {
+    color: orange; }
+  90% {
+    color: red; }
+  100% {
+    color: black; } }
+
+@keyframes changingColors {
+  0% {
+    color: black; }
+  10% {
+    color: blue; }
+  30% {
+    color: green; }
+  50% {
+    color: yellow; }
+  70% {
+    color: orange; }
+  90% {
+    color: red; }
+  100% {
+    color: black; } }
 
 html,
 body {
