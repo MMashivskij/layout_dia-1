@@ -22,13 +22,24 @@ input {
   background-image: linear-gradient(to top, #fcfcfd 27.8%, rgba(252, 252, 253, 0) -20%), linear-gradient(115deg, #56ccf2 72%, #fcfcfd 32%);
   padding: 48px 227px 0;
   color: #fff; }
+  .header__logo {
+    display: inline-block;
+    margin-right: 111.5px;
+    -webkit-transition: 1s;
+    transition: 1s; }
+    .header__logo:hover {
+      -webkit-transform: scale(2);
+              transform: scale(2); }
   .header__info {
     padding-left: 98px;
     margin-top: 80px; }
     .header__info_text {
       margin-top: 22px;
       font-size: 24px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      display: block;
+      width: 50vw;
+      text-align: justify; }
   .header__button {
     width: 226px;
     height: 56px;
@@ -66,19 +77,30 @@ input {
     .header__networks {
       margin-left: 0; } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 425px) {
   .header {
-    background-image: linear-gradient(to top, #fcfcfd 22%, rgba(252, 252, 253, 0) -20%), linear-gradient(115deg, #56ccf2 66%, #fcfcfd 32%);
-    padding: 20px 20px 0; }
+    background-color: #56ccf2;
+    background-image: none;
+    padding: 20px 20px; }
+    .header__logo {
+      display: block;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #56ccf2; }
+      .header__logo:focus {
+        -webkit-transform: none;
+                transform: none;
+        border: 1px solid #fff; }
     .header__info {
       padding-left: 0;
-      margin-top: 10px; }
+      margin-top: 50px; }
       .header__info_heading {
         text-align: center; }
       .header__info_text {
         margin-top: 22px;
         font-size: 14px;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        width: 90vw; }
     .header__button {
       width: 226px;
       height: 56px;
@@ -169,13 +191,14 @@ input {
         margin-bottom: 32px;
         margin-top: 64px; }
       .services__block_service_text {
-        color: #334563; }
+        color: #334563;
+        text-align: justify; }
 
 @media screen and (max-width: 1280px) {
   .services {
     padding: 130px 180px; } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 425px) {
   .services {
     padding: 50px 20px 0; }
     .services__block {
@@ -185,7 +208,10 @@ input {
           -ms-flex-direction: column;
               flex-direction: column; }
       .services__block_service {
-        margin-bottom: 50px; }
+        margin-bottom: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
         .services__block_service_heading {
           margin-top: 24px;
           margin-bottom: 16px; } }
@@ -355,7 +381,8 @@ input {
         border-radius: 32px;
         margin-right: 32px; }
       .features__info_block_text {
-        color: white; }
+        color: white;
+        text-align: justify; }
 
 @media screen and (max-width: 1280px) {
   .features {
@@ -822,18 +849,9 @@ input {
     display: none; } }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   height: 32px;
   line-height: 1; }
-  .nav__logo {
-    margin-right: 111.5px;
-    -webkit-transition: 1s;
-    transition: 1s; }
-    .nav__logo:hover {
-      -webkit-transform: scale(2);
-              transform: scale(2); }
   .nav__link {
     margin: auto 31.5px; }
   .nav__spec {
@@ -861,29 +879,16 @@ input {
   .nav__spec {
     margin-left: 79px !important; } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 425px) {
   .nav {
     display: inline-block;
     height: 32px;
     line-height: 1;
     text-align: inherit; }
-    .nav__logo {
-      margin-right: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      margin-bottom: 20px;
-      border: 1px solid #56ccf2; }
-      .nav__logo:focus {
-        -webkit-transform: none;
-                transform: none;
-        border: 1px solid #fff; }
     .nav__link {
       margin: auto 20px;
-      border: 1px solid #56ccf2; }
+      border: 1px solid #56ccf2;
+      display: block; }
     .nav__spec {
       margin-left: 20px !important; }
       .nav__spec::after {
@@ -986,7 +991,8 @@ input {
 .container {
   width: 1146px;
   height: 640px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 @media screen and (max-width: 1366px) {
   .slider__image {
@@ -996,13 +1002,13 @@ input {
     width: 917px;
     height: 533px; } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 425px) {
   .slider__image {
     width: 280px;
     height: 176px; }
   .slider__intro {
-    left: 49px;
-    bottom: 43px; }
+    left: 20px;
+    bottom: 20px; }
     .slider__intro_heading {
       font-size: 10px; }
     .slider__intro_text {
@@ -1045,7 +1051,9 @@ input {
         outline: none; }
   .container {
     width: 280px;
-    height: 168px; } }
+    height: 168px;
+    margin-left: auto;
+    margin-right: auto; } }
 
 .networks {
   display: -webkit-box;
@@ -1055,9 +1063,9 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: space-evently;
+      -ms-flex-pack: space-evently;
+          justify-content: space-evently; }
   .networks__link {
     text-decoration: none;
     color: #253757;
@@ -1070,12 +1078,14 @@ input {
     .networks__link:hover {
       color: #fcc304; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 425px) {
   .networks {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     .networks__link {
       font-size: 10px;
       -webkit-transform: none;
@@ -1149,6 +1159,12 @@ input {
         position: absolute;
         top: 90px;
         left: 60px; } }
+
+@media screen and (max-width: 425px) {
+  .testimonials__card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; } }
 
 .author {
   -webkit-animation: changingColors 30s linear infinite;
